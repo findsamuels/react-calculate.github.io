@@ -1,0 +1,64 @@
+@import '../../styles/main.scss';
+
+.Button,.Button:focus{
+border: none;
+
+color: $color-white;
+margin: 0;
+outline: none;
+width: 100%;
+padding: 2rem 3rem;
+text-align: center;
+border: .1px solid $color-grey;
+}
+
+
+.Button{
+    transition: all .4s ease-in-out;
+    background-color: $color-darkGrey;
+   
+    &:hover{
+        background-color: $color-black;
+       
+        
+    }
+}
+
+.red{
+   color: $color-orange;
+    
+    &:hover{
+       
+        opacity: .6;
+    }
+
+}
+.black{
+    background-color: $color-grey;
+ 
+    
+    &:hover{
+        background-color: $color-black;
+        
+    }
+
+}
+.darkGrey{
+    background-color: $color-darkGrey;
+    &:hover{
+        background-color: $color-black;
+        
+    }
+
+}
+
+.green{
+    background-color: $color-green;
+    border: .1px solid $color-green;
+    &:hover{
+        background-color: $color-darkGreen;
+        border: .1px solid $color-darkGreen;
+       
+    }
+
+}

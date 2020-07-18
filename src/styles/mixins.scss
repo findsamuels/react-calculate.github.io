@@ -1,0 +1,60 @@
+@import './variables.scss';
+
+
+@mixin border($size,$color) {
+border: $size solid $color ;
+}
+@mixin borderBottom($size,$color) {
+border-bottom: $size solid $color ;
+}
+
+@mixin boxShadow($verticalSize, $blurSize, $color){
+    box-shadow: 0 $verticalSize $blurSize 0 $color;
+}
+
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@mixin respond($breakpoint) {
+    @if($breakpoint == 'phonePortrait'){
+        @media only screen and (max-width: $phonePortrait){
+            @content;
+        }
+    }
+
+    @if($breakpoint == 'phone'){
+        @media only screen and (max-width: $phoneLanscape){
+            @content;
+        }
+    }
+    @else if($breakpoint == 'tablet'){
+        @media only screen and (min-width: $tabletMin) and (max-width: $tabletMax){
+            @content;
+        }
+    }
+    @else if($breakpoint == 'tabletMin'){
+        @media only screen and (min-width: $tabletMin){
+            @content;
+        }
+    }
+     @else if($breakpoint == 'tabletMax'){
+        @media only screen and (max-width: $tabletMax){
+            @content;
+        }
+    }
+     @else if($breakpoint == 'desktop'){
+        @media only screen and (min-width: $desktopMin){
+            @content;
+        }
+    }
+     @else if($breakpoint == 'largeScreen'){
+        @media only screen and (min-width: $largeScreenMin){
+            @content;
+        }
+    }
+}

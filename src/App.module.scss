@@ -1,0 +1,11 @@
+@import './styles/main.scss';
+
+.App {
+  text-align: center;
+  background-color: $color-lightGrey;
+  margin: 0 auto;
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}

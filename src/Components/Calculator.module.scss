@@ -1,0 +1,13 @@
+@import '../styles/main.scss';
+
+.Calculator{
+    background-color: $color-greenGrey;
+    width: 100%;
+    max-width: 320px;
+
+    display: inline-block;
+    
+    @include boxShadow(.1rem, 1rem, $color-darkGrey);
+   
+            
+}

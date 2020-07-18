@@ -1,0 +1,13 @@
+@import '../styles/main.scss';
+
+.ControlPanel{
+width: 100%;
+margin: 0 auto;
+overflow: hidden;
+color: $color-white;
+border-bottom-right-radius: .2rem;
+border-bottom-left-radius: .2rem;
+background-color: $color-darkGrey;
+font-size: 2rem;
+font-weight: lighter;
+}
